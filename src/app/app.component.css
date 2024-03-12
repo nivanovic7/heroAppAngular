@@ -1,0 +1,23 @@
+.button{
+    border: 1px solid black;
+    padding: 1rem .5rem;
+    background-color: gray;
+
+    margin-right: 1rem;
+}
+
+.button:hover{
+    transition: all .3s;
+    background-color: transparent;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+nav{
+    margin: 2rem 0
+}
