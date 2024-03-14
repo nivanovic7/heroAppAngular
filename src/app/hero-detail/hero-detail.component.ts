@@ -19,7 +19,7 @@ constructor(private route: ActivatedRoute, private heroService: HerosService, pr
 
   ngOnInit(): void {
    this.heroId = +this.route.snapshot.params['id'];
-    this.hero = this.heroService.getHero(this.heroId);
+   this.heroService.getHero(this.heroId).subscribe(hero => this.hero = hero);
   }
 
   goBack(){
@@ -27,7 +27,8 @@ constructor(private route: ActivatedRoute, private heroService: HerosService, pr
   }
 
   saveHero(name:string){
-    this.heroService.updateHero(this.heroId, name)
+    this.heroService.updateHero(this.heroId, name);
+
   }
 }
 
