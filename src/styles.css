@@ -2,3 +2,18 @@
 body{
     background-color: rgba(163, 163, 163, 0.426);
 }
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    padding: 0 1rem;
+    border-bottom: 1px solid red;
+    gap: .5rem;
+}
+
+li:hover{
+    background-color: rgb(197, 190, 190);
+    cursor: pointer;
+}

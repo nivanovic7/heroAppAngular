@@ -1,0 +1,11 @@
+<p>
+    Hero id: {{hero.id}}
+</p>
+
+<div>
+    <label for="hero-name">Hero name:</label>
+    <input #name  type="text" name="hero-name" value="{{hero.name}}">
+</div>
+
+<button (click)="goBack()">Go back</button>
+<button (click)="saveHero(name.value)">Save</button>

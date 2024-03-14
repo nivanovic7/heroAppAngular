@@ -1,1 +1,7 @@
-<p>heros works!</p>
+<h2>HEROS</h2>
+<ul>
+    <li *ngFor="let hero of heros" routerLink="/detail/{{hero.id}}">
+        <p >{{hero.id}}</p>
+        <p>{{hero.name}}</p>
+    </li>
+</ul>
